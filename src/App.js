@@ -7,6 +7,7 @@ import './App.css';
 import Insert from './insert';
 import Nav from './Nav';
 import Home from './home';
+import View from './view';
 
 
 class App extends Component{
@@ -24,6 +25,9 @@ render(){
 
         <Route path="/insert" component={Insert}>
         <Insert />
+      </Route>
+      <Route path="/view" component={View}>
+        <View />
       </Route>
       </Switch>
 		</Router>

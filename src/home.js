@@ -11,6 +11,7 @@ class Home extends Component{
 	
   return (
     <div className="Home">
+       <br/>
      <h1>HomePage</h1>
 	
 		

@@ -47,7 +47,7 @@ const obj ={
 };
 
 
-axios.post('http://localhost/ReactFunction/Insert.php', obj)
+axios.post('http://127.0.0.1:8080/ReactFunction/Insert.php', obj)
 .then(res=> console.log(res.data));
 //console.log(obj);
 
@@ -64,6 +64,7 @@ axios.post('http://localhost/ReactFunction/Insert.php', obj)
 render(){
   return (
     <div className="Insert">
+        <br/>
   <h1> Insert</h1>
 		
         <form onSubmit={this.onSubmit}>
@@ -73,7 +74,7 @@ render(){
             </div>
             <div className="form-group">
                 <label>Password:</label>
-            <input type="password" placeholder="Username" className="form-control" value={this.state.password} onChange={this.onChangePassword} />
+            <input type="password" placeholder="Passsword" className="form-control" value={this.state.password} onChange={this.onChangePassword} />
             </div>
             <div className="form-group">
                 
